@@ -4,8 +4,10 @@ const postSchema = new mongoose.Schema(
   {
     title: String,
     content: String,
+    postNum: Number,
+    image: String,
   },
-  { collation: "posts" }
+  { collection: "posts" }
 );
 
 const Post = mongoose.model("Post", postSchema);
