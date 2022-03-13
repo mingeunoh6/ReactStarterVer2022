@@ -7,9 +7,9 @@ const path = require("path");
 const config = require("../config/key");
 
 const s3 = new AWS.S3({
-  accessKeyId: config.AWS_ACCESS_KEY_ID,
-  secretAccessKey: config.AWS_SECRET_ACCESS_KEY,
-  region: config.AWS_DEFAULT_REGION,
+  accessKeyId: config.accessKeyId,
+  secretAccessKey: config.secretAccessKey,
+  region: config.region,
 });
 
 function setUpload(bucket) {
